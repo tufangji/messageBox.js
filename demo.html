@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="keywords" content="关键词">
+    <meta name="description" content="描述">
+    <meta name="author" content="tfj">
+    <script src="messageBox.js"></script>
+    <style>
+        body {
+            font-family: "Microsoft YaHei", serif;
+            user-select: none;
+        }
+
+        body,
+        dl,
+        dd,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+        }
+
+        ol,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap" style="margin:auto;background-color: pink;width:300px;height:200px;">
+    </div>
+    <script>
+        (function () {
+            var oWrap = document.getElementById("wrap");
+            oWrap.onclick = function () {
+                messageBox("messagebox11111<p>11111111</P>1111<b>11111111111111111111111111</b>1111111111", {
+                    width: 200,
+                    height: 500,
+                    title: "header"
+                })
+            }
+        })();
+    </script>
+</body>
+
+</html>
